@@ -1,0 +1,172 @@
+/* style.css - Desain Global Ensiklopedia Shortcut oleh Mr.Rm19 */
+:root {
+    --bg-color: #0f172a;
+    --card-bg: #1e293b;
+    --text-color: #f8fafc;
+    --accent-color: #38bdf8;
+    --kbd-bg: #334155;
+    --kbd-border: #475569;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+header p {
+    margin: 10px 0 0 0;
+    opacity: 0.8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Desain Menu Utama (Grid) */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-card {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+.menu-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.2);
+}
+
+.menu-card h3 {
+    margin-top: 0;
+    color: var(--accent-color);
+}
+
+/* Desain Tabel Shortcut */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #334155;
+}
+
+th {
+    background-color: #0f172a;
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #24334d;
+}
+
+/* Desain Tombol Keyboard KBD */
+kbd {
+    background-color: var(--kbd-bg);
+    border: 1px solid var(--kbd-border);
+    border-radius: 4px;
+    box-shadow: 0 2px 0px #1e293b, 0 3px 1px rgba(0,0,0,0.3);
+    color: #fff;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 3px 8px;
+    margin: 2px;
+    white-space: nowrap;
+}
+
+/* Tombol Kembali */
+.btn-back {
+    display: inline-block;
+    background-color: var(--kbd-bg);
+    color: var(--text-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid var(--kbd-border);
+}
+
+.btn-back:hover {
+    background-color: var(--accent-color);
+    color: #0f172a;
+}
+
+/* Footer & Copyright */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #1e293b;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Desain Kolom Pencarian Global - Tambahan Mr.Rm19 */
+.search-container {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    background-color: var(--card-bg);
+    border: 2px solid var(--kbd-border);
+    border-radius: 8px;
+    color: var(--text-color);
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+}

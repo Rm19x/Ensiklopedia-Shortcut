@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortcut Terminal & CLI - by Mr.Rm19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Shortcut Terminal & CLI (by Mr.Rm19)</h1>
+        <p>Koleksi shortcut esensial untuk menguasai navigasi baris perintah Bash, Zsh, dan PowerShell</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="btn-back">&larr; Kembali ke Menu Utama</a>
+
+        <div class="search-container">
+            <input type="text" id="shortcutSearch" class="search-input" placeholder="Ketik kata kunci untuk mencari shortcut CLI (misal: clear, kursor, sejarah)...">
+        </div>
+
+        <h2>Daftar Lengkap Shortcut Terminal & CLI</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 35%;">Kombinasi Tombol</th>
+                    <th style="width: 65%;">Fungsi / Deskripsi Nyata</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>A</kbd></td>
+                    <td><strong>Jump to Start:</strong> Memindahkan kursor teks langsung ke awal baris perintah aktif tanpa perlu menekan panah kiri berulang-ulang.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>E</kbd></td>
+                    <td><strong>Jump to End:</strong> Memindahkan kursor teks langsung ke ujung paling akhir dari baris perintah.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>B</kbd> atau <kbd>Ctrl</kbd> + <kbd>&larr;</kbd></td>
+                    <td><strong>Back One Word:</strong> Memindahkan kursor mundur sejauh satu kata penuh ke arah kiri.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>F</kbd> atau <kbd>Ctrl</kbd> + <kbd>&rarr;</kbd></td>
+                    <td><strong>Forward One Word:</strong> Memindahkan kursor maju sejauh satu kata penuh ke arah kanan.</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>U</kbd></td>
+                    <td><strong>Cut Left to Start:</strong> Menghapus (cut) semua karakter dari posisi kursor saat ini ke arah kiri sampai ke awal baris.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>K</kbd></td>
+                    <td><strong>Cut Right to End:</strong> Menghapus (cut) semua karakter dari posisi kursor saat ini ke arah kanan sampai ke akhir baris.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>W</kbd></td>
+                    <td><strong>Delete Word Left:</strong> Menghapus satu kata tepat di sebelah kiri posisi kursor.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>D</kbd></td>
+                    <td><strong>Delete Word Right:</strong> Menghapus satu kata tepat di sebelah kanan posisi kursor.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Y</kbd></td>
+                    <td><strong>Paste/Yank:</strong> Menempelkan kembali (paste) elemen teks terakhir yang baru saja dihapus menggunakan perintah Ctrl+U, Ctrl+K, atau Ctrl+W.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>_</kbd> (Underscore)</td>
+                    <td><strong>Undo CLI Action:</strong> Membatalkan ketikan atau penghapusan teks terakhir yang kamu lakukan di dalam terminal.</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>R</kbd></td>
+                    <td><strong>Reverse Intelligent Search:</strong> Membuka mode pencarian riwayat teks pintar untuk memanggil kembali perintah panjang masa lalu hanya dengan mengetik serpihan kata kuncinya.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>G</kbd></td>
+                    <td><strong>Exit History Mode:</strong> Keluar dari mode pencarian Ctrl+R tanpa mengeksekusi perintah apapun dan mengembalikan ketikan semula.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>P</kbd> atau <kbd>&uarr;</kbd></td>
+                    <td><strong>Previous Command:</strong> Melihat dan memunculkan kembali satu perintah terakhir di baris riwayat atas.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>N</kbd> atau <kbd>&darr;</kbd></td>
+                    <td><strong>Next Command:</strong> Berpindah ke baris perintah berikutnya yang lebih baru di dalam riwayat chat terminal.</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>L</kbd></td>
+                    <td><strong>Clear Screen Display:</strong> Membersihkan seluruh tampilan layar terminal dari tumpukan teks log tanpa menghapus riwayat perintah yang tersimpan (Sama seperti mengetik <code>clear</code> atau <code>cls</code>).</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>S</kbd></td>
+                    <td><strong>Freeze Terminal Output:</strong> Menghentikan sementara aliran data output pada layar (sangat berguna untuk membaca log server yang berjalan terlalu cepat).</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Q</kbd></td>
+                    <td><strong>Unfreeze Terminal Output:</strong> Melepaskan status beku akibat perintah Ctrl+S agar terminal bisa beroperasi normal kembali.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Tab</kbd></td>
+                    <td><strong>Autocompletion:</strong> Fitur otomatisasi paling penting untuk melengkapi nama perintah, folder, atau file secara cerdas tanpa perlu mengetik penuh.</td>
+                </tr>
+
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>C</kbd></td>
+                    <td><strong>Terminate Process:</strong> Mengirimkan sinyal interrupt (SIGINT) untuk menghentikan secara paksa script atau proses aplikasi yang sedang berjalan di terminal.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Z</kbd></td>
+                    <td><strong>Suspend Process:</strong> Menghentikan sementara proses aktif dan memindahkannya ke latar belakang (background), ketik <code>fg</code> untuk mengembalikannya ke depan.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>D</kbd></td>
+                    <td><strong>End Terminal Session:</strong> Menutup aplikasi terminal saat ini atau memutus jaringan koneksi remote SSH secara bersih (Sama dengan perintah <code>exit</code>).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <strong>Mr.Rm19</strong>. All Rights Reserved.</p>
+        <p>Dibuat secara serius untuk komunitas global. Kunjungi GitHub resmi: <a href="https://github.com/Rm19x" target="_blank">github.com/Rm19x</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

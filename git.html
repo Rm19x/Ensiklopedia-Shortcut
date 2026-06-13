@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortcut & Navigasi Git - by Mr.Rm19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Navigasi & Shortcut Git (by Mr.Rm19)</h1>
+        <p>Koleksi perintah cepat dan shortcut manajemen kontrol versi Git untuk produktivitas developer</p>
+    </header>
+
+    <div class="container">
+        <a href="index.html" class="btn-back">&larr; Kembali ke Menu Utama</a>
+
+        <div class="search-container">
+            <input type="text" id="shortcutSearch" class="search-input" placeholder="Ketik kata kunci untuk mencari shortcut Git (misal: commit, branch, status)...">
+        </div>
+
+        <h2>Daftar Lengkap Shortcut & Perintah Cepat Git</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 35%;">Perintah / Shortcut CLI</th>
+                    <th style="width: 65%;">Fungsi / Deskripsi Nyata</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>git init</code></td>
+                    <td><strong>Initialize Repository:</strong> Membuat repositori Git baru lokal di dalam folder proyek aktif.</td>
+                </tr>
+                <tr>
+                    <td><code>git clone &lt;url&gt;</code></td>
+                    <td><strong>Clone Repository:</strong> Mengunduh atau menggandakan repositori jarak jauh (seperti dari GitHub) ke komputer lokal.</td>
+                </tr>
+                <tr>
+                    <td><code>git config --global user.name "Nama"</code></td>
+                    <td><strong>Set Username:</strong> Mengonfigurasi nama pengguna secara global untuk riwayat commit.</td>
+                </tr>
+
+                <tr>
+                    <td><code>git status</code></td>
+                    <td><strong>Check Status:</strong> Memeriksa status berkas (apakah ada file yang dimodifikasi, dihapus, atau belum dilacak).</td>
+                </tr>
+                <tr>
+                    <td><code>git add .</code></td>
+                    <td><strong>Stage All Changes:</strong> Memasukkan seluruh berkas yang baru atau yang mengalami perubahan ke dalam staging area (siap di-commit).</td>
+                </tr>
+                <tr>
+                    <td><code>git add &lt;nama-file&gt;</code></td>
+                    <td><strong>Stage Specific File:</strong> Hanya memasukkan berkas spesifik tertentu ke dalam staging area.</td>
+                </tr>
+                <tr>
+                    <td><code>git commit -m "Pesan"</code></td>
+                    <td><strong>Commit with Message:</strong> Menyimpan perubahan yang ada di staging area ke dalam riwayat Git lokal lengkap dengan pesan catatan.</td>
+                </tr>
+                <tr>
+                    <td><code>git commit --amend -m "Pesan Baru"</code></td>
+                    <td><strong>Amend Last Commit:</strong> Mengubah pesan commit terakhir atau menggabungkan perubahan baru ke dalam commit paling buncit tanpa membuat commit baru.</td>
+                </tr>
+
+                <tr>
+                    <td><code>git branch</code></td>
+                    <td><strong>List Branches:</strong> Menampilkan daftar seluruh branch (cabang) lokal yang ada di dalam proyek.</td>
+                </tr>
+                <tr>
+                    <td><code>git branch &lt;nama-cabang&gt;</code></td>
+                    <td><strong>Create Branch:</strong> Membuat cabang alur kerja baru tanpa langsung berpindah ke cabang tersebut.</td>
+                </tr>
+                <tr>
+                    <td><code>git checkout &lt;nama-cabang&gt;</code></td>
+                    <td><strong>Switch Branch:</strong> Berpindah fokus kerja ke cabang/branch lain yang dituju.</td>
+                </tr>
+                <tr>
+                    <td><code>git checkout -b &lt;nama-cabang&gt;</code></td>
+                    <td><strong>Create & Switch Branch:</strong> Jalan pintas tercepat untuk membuat cabang baru sekaligus langsung berpindah ke dalamnya.</td>
+                </tr>
+                <tr>
+                    <td><code>git merge &lt;nama-cabang&gt;</code></td>
+                    <td><strong>Merge Branch:</strong> Menggabungkan riwayat perubahan dari cabang tujuan ke dalam cabang aktif tempat kamu berada saat ini.</td>
+                </tr>
+                <tr>
+                    <td><code>git branch -d &lt;nama-cabang&gt;</code></td>
+                    <td><strong>Delete Branch:</strong> Menghapus cabang lokal yang sudah selesai digunakan atau sudah di-merge secara aman.</td>
+                </tr>
+
+                <tr>
+                    <td><code>git remote add origin &lt;url&gt;</code></td>
+                    <td><strong>Link Remote:</strong> Menghubungkan repositori lokal milikmu ke repositori server jarak jauh (seperti repositori di GitHub).</td>
+                </tr>
+                <tr>
+                    <td><code>git push -u origin &lt;nama-cabang&gt;</code></td>
+                    <td><strong>First Push:</strong> Mengunggah hasil kerja lokal ke server jarak jauh untuk pertama kalinya sekaligus mengatur upstream pelacakan.</td>
+                </tr>
+                <tr>
+                    <td><code>git push</code></td>
+                    <td><strong>Regular Push:</strong> Mengunggah commit baru lokal ke server remote (jika upstream sudah diatur sebelumnya).</td>
+                </tr>
+                <tr>
+                    <td><code>git pull</code></td>
+                    <td><strong>Pull Changes:</strong> Mengambil sekaligus menggabungkan (fetch + merge) commit terbaru dari server jarak jauh ke proyek lokalkan agar sinkron.</td>
+                </tr>
+                <tr>
+                    <td><code>git fetch</code></td>
+                    <td><strong>Fetch History:</strong> Hanya mengambil info riwayat perubahan terbaru dari server jarak jauh tanpa langsung menimpanya ke berkas lokal.</td>
+                </tr>
+
+                <tr>
+                    <td><code>git log --oneline</code></td>
+                    <td><strong>Compact History Log:</strong> Menampilkan riwayat commit proyek secara ringkas (satu baris per commit) agar mudah dibaca cepat.</td>
+                </tr>
+                <tr>
+                    <td><code>git reset --soft HEAD~1</code></td>
+                    <td><strong>Undo Last Commit Safely:</strong> Membatalkan satu commit terakhir, tetapi tetap menjaga berkas hasil modifikasimu aman di staging area.</td>
+                </tr>
+                <tr>
+                    <td><code>git reset --hard HEAD~1</code></td>
+                    <td><strong>Hard Reset Last Commit:</strong> Membatalkan commit terakhir dan MENGHAPUS total semua perubahan berkas dokumen yang ada (Hati-hati, data hilang permanen!).</td>
+                </tr>
+                <tr>
+                    <td><code>git stash</code></td>
+                    <td><strong>Stash Changes:</strong> Menyimpan sementara perubahan pengerjaan berkas yang belum siap di-commit ke dalam kantong penyimpanan darurat, membuat direktori kembali bersih.</td>
+                </tr>
+                <tr>
+                    <td><code>git stash pop</code></td>
+                    <td><strong>Restore Stash:</strong> Mengambil kembali perubahan pengerjaan yang sebelumnya disimpan di dalam kantong darurat stash ke berkas aktif saat ini.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <strong>Mr.Rm19</strong>. All Rights Reserved.</p>
+        <p>Dibuat secara serius untuk komunitas global. Kunjungi GitHub resmi: <a href="https://github.com/Rm19x" target="_blank">github.com/Rm19x</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

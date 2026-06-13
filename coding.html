@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortcut Coding & VS Code Lengkap - Mr.Rm19</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Shortcut Coding & VS Code (by Mr.Rm19)</h1>
+        <p>Senjata rahasia para developer untuk manipulasi kode super cepat di Visual Studio Code</p>
+    </header>
+
+    <div class="container">
+        <!-- Tombol Kembali ke Dashboard -->
+        <a href="index.html" class="btn-back">&larr; Kembali ke Menu Utama</a>
+
+        <!-- Kolom Pencarian Live Search -->
+        <div class="search-container">
+            <input type="text" id="shortcutSearch" class="search-input" placeholder="Ketik kata kunci untuk mencari shortcut coding (misal: cursor, line, terminal)...">
+        </div>
+
+        <h2>Daftar Lengkap Shortcut VS Code (Windows/Linux)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 35%;">Kombinasi Tombol</th>
+                    <th style="width: 65%;">Fungsi / Deskripsi Nyata</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- KATEGORI: MANIPULASI BARIS KODE (LINE EDITING) -->
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>&uarr;</kbd> / <kbd>&darr;</kbd></td>
+                    <td><strong>Move Line:</strong> Memindahkan satu baris kode (atau blok kode yang diseleksi) ke atas atau ke bawah tanpa perlu cut-paste.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&uarr;</kbd> / <kbd>&darr;</kbd></td>
+                    <td><strong>Copy Line:</strong> Menggandakan (duplikat) baris kode yang sedang aktif langsung ke atas atau ke bawahnya.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd></td>
+                    <td><strong>Delete Line:</strong> Menghapus satu baris tempat kursor berada secara instan.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Enter</kbd></td>
+                    <td><strong>Insert Line Below:</strong> Membuat baris baru kosong tepat di bawah baris aktif, tanpa peduli posisi kursor sedang di tengah atau ujung kalimat.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd></td>
+                    <td><strong>Insert Line Above:</strong> Membuat baris baru kosong tepat di atas baris aktif saat ini.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>/</kbd></td>
+                    <td><strong>Toggle Line Comment:</strong> Mengubah baris kode menjadi komentar (comment) atau sebaliknya secara otomatis sesuai bahasa pemrograman yang dipakai.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd></td>
+                    <td><strong>Toggle Block Comment:</strong> Membungkus kode yang diseleksi menjadi blok komentar multi-baris (misal: <code>/* kode */</code>).</td>
+                </tr>
+
+                <!-- KATEGORI: MULTI-CURSOR & SELEKSI PINTAR -->
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>Klik Kiri</kbd></td>
+                    <td><strong>Insert Cursor:</strong> Menaruh banyak kursor di berbagai baris berbeda sekaligus untuk mengetik secara massal.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>&uarr;</kbd> / <kbd>&darr;</kbd></td>
+                    <td><strong>Column Selection:</strong> Menambahkan kursor lurus ke atas atau ke bawah secara vertikal untuk mengedit kode berbentuk tabel/list.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>D</kbd></td>
+                    <td><strong>Select Next Match:</strong> Menyeleksi kata yang sama berikutnya satu per satu. Sangat cepat untuk mengubah nama variabel yang berulang.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd></td>
+                    <td><strong>Select All Matches:</strong> Menyeleksi SELURUH kata yang sama di dalam satu file aktif sekaligus untuk diubah massal.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&rarr;</kbd></td>
+                    <td><strong>Expand Selection:</strong> Memperluas seleksi teks secara pintar berbasis struktur kode (karakter &rarr; kata &rarr; string &rarr; fungsi).</td>
+                </tr>
+                <tr>
+                    <td><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&larr;</kbd></td>
+                    <td><strong>Shrink Selection:</strong> Mempersempit kembali cakupan seleksi pintar yang telah diperluas.</td>
+                </tr>
+
+                <!-- KATEGORI: NAVIGASI FILE & PENCARIAN PROYEK -->
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>P</kbd></td>
+                    <td><strong>Quick Open File:</strong> Mencari dan membuka file apapun di dalam folder proyek secara instan cukup dengan mengetik namanya.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>T</kbd></td>
+                    <td><strong>Show All Symbols:</strong> Mencari fungsi, class, atau variabel spesifik di seluruh file proyek.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>G</kbd></td>
+                    <td><strong>Go to Line:</strong> Melompat langsung ke nomor baris tertentu (ketik nomor baris setelah tanda titik dua <code>:</code>).</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>F</kbd></td>
+                    <td><strong>Find in File:</strong> Membuka kolom pencarian teks di dalam file yang sedang aktif.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>H</kbd></td>
+                    <td><strong>Replace in File:</strong> Menemukan teks dan menggantinya dengan teks baru dalam file aktif.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd></td>
+                    <td><strong>Global Search:</strong> Mencari teks atau kata kunci spesifik di SELURUH file yang ada di dalam folder proyek.</td>
+                </tr>
+
+                <!-- KATEGORI: MANAGEMEN EDITOR & LAYOUT INTERFACE -->
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>B</kbd></td>
+                    <td><strong>Toggle Sidebar:</strong> Menyembunyikan atau menampilkan sidebar kiri (File Explorer) agar area menulis kode menjadi lebih luas.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>\</kbd> (Backslash)</td>
+                    <td><strong>Split Editor:</strong> Membagi layar editor kode menjadi dua atau tiga bagian secara vertikal untuk membandingkan kode side-by-side.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></td>
+                    <td><strong>Focus Group:</strong> Berpindah fokus keyboard ke jendela editor grup pertama, kedua, atau ketiga hasil dari split screen.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>W</kbd></td>
+                    <td><strong>Close Editor:</strong> Menutup tab file yang sedang aktif digunakan saat ini.</td>
+                </tr>
+
+                <!-- KATEGORI: TERMINAL TERINTEGRASI & LOGIKA DEVELOPMENT -->
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>`</kbd> (Backtick)</td>
+                    <td><strong>Toggle Integrated Terminal:</strong> Membuka atau menutup panel terminal internal bawaan VS Code di bagian bawah tanpa merusak layout.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>`</kbd></td>
+                    <td><strong>Create New Terminal:</strong> Membuat *instance* atau tab terminal baru yang bersih.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></td>
+                    <td><strong>Format Document:</strong> Merapikan struktur penulisan kode (indentasi, spasi, semi-kolon) secara otomatis sesuai standar linter (Prettier/Beautify).</td>
+                </tr>
+                <tr>
+                    <td><kbd>Ctrl</kbd> + <kbd>Space</kbd></td>
+                    <td><strong>Trigger Suggestion:</strong> Memunculkan paksa saran pelengkap otomatis (IntelliSense/Autocompletion) jika sempat tertutup.</td>
+                </tr>
+                <tr>
+                    <td><kbd>F12</kbd></td>
+                    <td><strong>Go to Definition:</strong> Melompat langsung ke asal-usul fungsi atau variabel dideklarasikan untuk memeriksa strukturnya.</td>
+                </tr>
+                <tr>
+                    <td><kbd>Alt</kbd> + <kbd>Z</kbd></td>
+                    <td><strong>Toggle Word Wrap:</strong> Mengaktifkan fitur bungkus teks agar kode yang terlalu panjang ke kanan otomatis turun ke bawah tanpa perlu horizontal scrolling.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 <strong>Mr.Rm19</strong>. All Rights Reserved.</p>
+        <p>Dibuat secara serius untuk komunitas global. Kunjungi GitHub resmi: <a href="https://github.com/Rm19x" target="_blank">github.com/Rm19x</a></p>
+    </footer>
+
+    <!-- Menghubungkan script.js untuk mengaktifkan fitur Live Search -->
+    <script src="script.js"></script>
+</body>
+</html>
